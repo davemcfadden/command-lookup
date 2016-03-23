@@ -31,13 +31,13 @@
 
 - Push app 
 	- No manifest file
-	```
-    	    cf push myappname -p target/myjarfile.jar
-    	```
+```
+cf push myappname -p target/myjarfile.jar
+```
 	- With manifest file
-	```
-    	    cf push
-    	```
+```
+cf push
+```
 	
 
 - Recent logs
