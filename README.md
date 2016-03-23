@@ -19,13 +19,13 @@
     cf rename-service myoldservicename mynewservicename
 
 - push app 
---No manifest file
+-- No manifest file
     cf push myappname -p target/myjarfile.jar
---With manifest file
+-- With manifest file
     cf push
 	
 
--Recent logs
+- Recent logs
     cf logs myapp --recent
 
 - Tail logs
@@ -35,10 +35,10 @@
 	
 	
 #Git
--Git like to remove repo
+- Git like to remove repo
     git remote add origin https://github.com/....
 
--Compare single file in difference revisions
+- Compare single file in difference revisions
     git diff version1:file version2:file
 	
 - Show diffs between local and remote
