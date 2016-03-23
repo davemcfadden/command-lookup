@@ -29,17 +29,15 @@
     cf rename-service myoldservicename mynewservicename
 ```
 
-- Push app 
-	- No manifest file
+- Push app - No manifest file
 ```
 cf push myappname -p target/myjarfile.jar
 ```
-	- With manifest file
+- Push app - With manifest file
 ```
 cf push
 ```
 	
-
 - Recent logs
 ```
     cf logs myapp --recent
