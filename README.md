@@ -84,8 +84,20 @@ git log
 git log --grep regexp
 ```
 
-#Docker Command
+#Docker Commands
+- Build Image from DockerFile
+```
+docker build -f /path/Dockerfile .
+```
 
+- Show running docker containers
+```
+docker ps
+```
 
+- Show all docker containers
+```
+docker ps -a
+```
 
 #NPM Commands
