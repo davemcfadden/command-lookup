@@ -99,10 +99,23 @@ docker ps
 ```
 docker ps -a
 ```
+
 - Rename local image
 ```
 docker tag bbdaf4361256 helloworld:latest
 ```
+
+- Start Docker container
+```
+docker run --name helloworldcontainer -d helloworld
+```
+
+- Tail Docker logs
+```
+docker logs <container id>
+```
+
+
 
 #NPM Commands
 
