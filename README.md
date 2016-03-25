@@ -99,5 +99,9 @@ docker ps
 ```
 docker ps -a
 ```
+- Rename local image
+```
+docker tag bbdaf4361256 helloworld:latest
+```
 
 #NPM Commands
