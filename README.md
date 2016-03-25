@@ -105,3 +105,10 @@ docker tag bbdaf4361256 helloworld:latest
 ```
 
 #NPM Commands
+
+
+#Unix
+- EC2 File transfer
+```
+scp -i C:/Users/Dave/Downloads/ec2.pem spring-boot-hello-world-0.0.1-SNAPSHOT.jar  ec2-user@ec2-11-111-111-111.compute-1.amazonaws.com:/home/ec2-user/
+```
