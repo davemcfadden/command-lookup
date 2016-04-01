@@ -66,6 +66,11 @@ git diff version1:file version2:file
 git diff local(master) remote (origin/master)
 ```
 
+- Overwrite local changes
+```
+git reset --hard HEAD
+```
+
 - Download(Clone) git project
 ```
 git clone <url>
