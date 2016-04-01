@@ -106,6 +106,12 @@ docker ps
 docker ps -a
 ```
 
+- Remove a docker container (container id can be retrieved using "docker ps -a"
+```
+docker rm <container id>
+```
+
+
 - Rename local image
 ```
 docker tag bbdaf4361256 helloworld:latest
