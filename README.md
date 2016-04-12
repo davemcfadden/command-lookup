@@ -1,4 +1,4 @@
-# Cloud Foundry commands 
+# Cloud Foundry Commands 
 - Get apps
 ```
     cf apps
@@ -144,7 +144,12 @@ scp -i C:/Users/Dave/Downloads/ec2.pem spring-boot-hello-world-0.0.1-SNAPSHOT.ja
 
 
 # Mongo
-## Find
+
+- Remote Connect
+```
+mongo <IP ADDRESS>:<PORT>/<DB NAME> -u <USERNAME> -p <PASSWORD>
+```
+
 - Find (AND)
 ```
 db.sampleset.find("name":"bob","age":23)
