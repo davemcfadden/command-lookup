@@ -141,3 +141,49 @@ docker pull davemcfadden/springboot-docker
 ```
 scp -i C:/Users/Dave/Downloads/ec2.pem spring-boot-hello-world-0.0.1-SNAPSHOT.jar  ec2-user@ec2-11-111-111-111.compute-1.amazonaws.com:/home/ec2-user/
 ```
+
+
+# Mongo
+## Find
+- Find (AND)
+ ```
+ db.sampleset.find("name":"bob","age":23)
+ ```
+  ```
+  db.sampleset.find({$and: [{"name": "bob"}, {"age": 23}]})
+ ```
+
+- Find (OR) 
+```
+ db.sampleset.find({$or: [{"name": "bob"}, {"age": 23}]})
+ ```
+ 
+- Find Explain
+```
+ db.sampleset.find({$or: [{"name": "bob"}, {"age": 23}]}).explain()
+ ```
+ ```
+ db.sampleset.find({$or: [{"name": "bob"}, {"age": 23}]}).explain("executionStats")
+ ```
+ 
+- Create Index Ascending
+```
+db.sampleset.createIndex({"name":1})
+```
+
+- Create Index Descending
+```
+db.sampleset.createIndex({"name":-1})
+```
+
+- Drop Index
+```
+db.sampleset.dropIndex({"name":1})
+```
+
+- Index Hint
+```
+ db.sampleset.find("name":"bob","age":23).hint( { indexName } )
+```
+
+
