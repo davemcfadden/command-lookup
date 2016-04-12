@@ -146,17 +146,17 @@ scp -i C:/Users/Dave/Downloads/ec2.pem spring-boot-hello-world-0.0.1-SNAPSHOT.ja
 # Mongo
 ## Find
 - Find (AND)
- ```
- db.sampleset.find("name":"bob","age":23)
- ```
-  ```
-  db.sampleset.find({$and: [{"name": "bob"}, {"age": 23}]})
- ```
+```
+db.sampleset.find("name":"bob","age":23)
+```
+```
+db.sampleset.find({$and: [{"name": "bob"}, {"age": 23}]})
+```
 
 - Find (OR) 
 ```
- db.sampleset.find({$or: [{"name": "bob"}, {"age": 23}]})
- ```
+db.sampleset.find({$or: [{"name": "bob"}, {"age": 23}]})
+```
  
 - Find Explain
 ```
