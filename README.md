@@ -160,11 +160,11 @@ scp -i C:/Users/Dave/Downloads/ec2.pem spring-boot-hello-world-0.0.1-SNAPSHOT.ja
  
 - Find Explain
 ```
- db.sampleset.find({$or: [{"name": "bob"}, {"age": 23}]}).explain()
- ```
- ```
- db.sampleset.find({$or: [{"name": "bob"}, {"age": 23}]}).explain("executionStats")
- ```
+db.sampleset.find({$or: [{"name": "bob"}, {"age": 23}]}).explain()
+```
+```
+db.sampleset.find({$or: [{"name": "bob"}, {"age": 23}]}).explain("executionStats")
+```
  
 - Create Index Ascending
 ```
@@ -184,6 +184,21 @@ db.sampleset.dropIndex({"name":1})
 - Index Hint
 ```
  db.sampleset.find("name":"bob","age":23).hint( { indexName } )
+```
+
+- Update (Single element)
+```
+db.sampleset.update({"_id":"01011"},{"$set":{"city":"london"}})
+```
+
+- Update (Muliple Rows)
+```
+db.sampleset.update({"city":"HADLEY"},{"$set":{"city":"london"}},{"multi":true})
+```
+
+- Update (Insert if not there)
+```
+db.sampleset.update({"city":"HADLEY"},{"$set":{"city":"london"}},{"multi":true,"upsert":true})
 ```
 
 
