@@ -225,18 +225,6 @@ db.sampleset.aggregate(
 )
 ```
 
-- Aggregation - Group City by Population and change result
-```
-db.sampleset.aggregate(
-[
-{$group:{"_id":"$city", count:{$sum: "$pop"}}},
-{$sort:{count:-1}}
-]
-)
-```
-
-
-
 
 
 
