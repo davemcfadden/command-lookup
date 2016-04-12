@@ -206,4 +206,37 @@ db.sampleset.update({"city":"HADLEY"},{"$set":{"city":"london"}},{"multi":true})
 db.sampleset.update({"city":"HADLEY"},{"$set":{"city":"london"}},{"multi":true,"upsert":true})
 ```
 
+- Aggregation - Count number of times Belfast appears
+```
+db.sampleset.aggregate(
+[
+{$group:{"_id":"$city", count:{$sum: 1}}}
+]
+)
+```
+
+- Aggregation - Group City by Population
+```
+db.sampleset.aggregate(
+[
+{$group:{"_id":"$city", count:{$sum: "$pop"}}},
+{$sort:{count:-1}}
+]
+)
+```
+
+- Aggregation - Group City by Population and change result
+```
+db.sampleset.aggregate(
+[
+{$group:{"_id":"$city", count:{$sum: "$pop"}}},
+{$sort:{count:-1}}
+]
+)
+```
+
+
+
+
+
 
