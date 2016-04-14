@@ -19,9 +19,9 @@
     cf bind-service myapp myservice
 ```
 
-- Remove Service
+- Remove Service/apps
 ```
-    cf delete-service myservice
+    cf delete myServiceOrAppName
 ```	
 	
 - Rename Service
