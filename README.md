@@ -52,7 +52,12 @@ cf push
 	
 	
 #Git
-- Git like to remove repo
+- Git stage modified or delete files
+```
+git add -u
+```
+
+- Git link to a remote repo
 ```
 git remote add origin https://github.com/....
 ```
