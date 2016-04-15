@@ -91,6 +91,7 @@ git config --global http.proxy http://<user>:<proxy>@<proxy server>:<port>
 ```
 git config credential.helper store
 git config --global credential.helper 'cache --timeout 10800'
+git push origin master
 ```
 
 - Show recent commits
