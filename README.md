@@ -90,7 +90,7 @@ git config --global http.proxy http://<user>:<proxy>@<proxy server>:<port>
 - Cache Git credentials (10800 is seconds - 3 hours)
 ```
 git config credential.helper store
-git config --global credential.helper 'cache --timeout 10800'
+git config --global credential.helper "cache --timeout=10800"
 git push origin master
 ```
 
