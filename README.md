@@ -124,7 +124,6 @@ docker ps -a
 docker rm <container id>
 ```
 
-
 - Rename local image
 ```
 docker tag bbdaf4361256 helloworld:latest
@@ -207,6 +206,11 @@ db.sampleset.dropIndex({"name":1})
 - Update (Single element)
 ```
 db.sampleset.update({"_id":"01011"},{"$set":{"city":"london"}})
+```
+
+- Update (Add element to array)
+```
+db.sampleset.update({"_id":1},{$push:{shops:{"newColumn":null}}})
 ```
 
 - Update (Muliple Rows)
