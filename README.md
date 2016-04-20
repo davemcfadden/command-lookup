@@ -242,6 +242,21 @@ db.sampleset.aggregate(
 )
 ```
 
+- Aggregation - $lookup
+```
+db.people.aggregate(
+[
+{$lookup:{
+from:"lookup",
+localField:"age",
+foreignField:"age", 
+as: "Age_Description"
+}
+}
+]
+)
+```
+
 
 
 
