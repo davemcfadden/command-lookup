@@ -103,6 +103,15 @@ git log
 git log --grep regexp
 ```
 
+- Sparse Checkout (Example using Eureka)
+```
+git init
+git remote add -f origin https://github.com/Netflix/eureka.git
+git config core.sparseCheckout true
+echo "eureka-examples/" >> .git/info/sparse-checkout
+git pull origin master
+```
+
 #Docker Commands
 - Build Image from DockerFile
 ```
