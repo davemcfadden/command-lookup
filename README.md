@@ -153,6 +153,10 @@ docker logs <container id>
 docker pull davemcfadden/springboot-docker
 ```
 
+- Run BASH inside helloworldcontainer
+```
+docker exec -it <helloworldcontainer id> bash
+```
 
 #NPM Commands
 
