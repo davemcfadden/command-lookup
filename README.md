@@ -155,7 +155,7 @@ docker pull davemcfadden/springboot-docker
 
 - Run BASH inside helloworldcontainer
 ```
-docker exec -it <helloworldcontainer id> bash
+docker exec -it <container id> bash
 ```
 
 #NPM Commands
