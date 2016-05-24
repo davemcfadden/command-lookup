@@ -94,6 +94,12 @@ git config --global credential.helper "cache --timeout=10800"
 git push origin master
 ```
 
+- Set commit author
+```
+git config --global user.name <username>
+git config --global user.email <email>
+```
+
 - Show recent commits
 ```
 git log
