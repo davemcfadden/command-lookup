@@ -255,7 +255,7 @@ db.sampleset.aggregate(
 )
 ```
 
-- Aggregation - $lookup
+- Aggregation - $lookup (Only valid in Mongo 3.2)
 ```
 db.people.aggregate(
 [
