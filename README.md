@@ -149,6 +149,11 @@ docker tag bbdaf4361256 helloworld:latest
 docker run --name helloworldcontainer -d helloworld
 ```
 
+-Stop all containers
+```
+docker stop $(docker ps -a -q)
+```
+
 - Tail Docker logs
 ```
 docker logs <container id>
