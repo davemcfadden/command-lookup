@@ -154,6 +154,11 @@ docker run --name helloworldcontainer -d helloworld
 docker stop $(docker ps -a -q)
 ```
 
+-Delete all local docker images
+```
+docker rmi $(docker images -q)
+```
+
 - Tail Docker logs
 ```
 docker logs <container id>
