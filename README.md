@@ -183,6 +183,12 @@ docker exec -it <container id> bash
 scp -i C:/Users/Dave/Downloads/ec2.pem spring-boot-hello-world-0.0.1-SNAPSHOT.jar  ec2-user@ec2-11-111-111-111.compute-1.amazonaws.com:/home/ec2-user/
 ```
 
+#AWS
+- Associate Instance with ECS Cluster (Add to User Data)
+```
+#!/bin/bash
+echo ECS_CLUSTER=your_cluster_name >> /etc/ecs/ecs.config
+```
 
 # Mongo
 
