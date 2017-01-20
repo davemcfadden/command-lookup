@@ -84,7 +84,7 @@ git clone <url>
 
 - Set git proxy
 ```
-git config --global http.proxy http://<user>:<proxy>@<proxy server>:<port>
+git config --global http.proxy http://<user>:<password>@<proxy server>:<port>
 
 ```
 - Cache Git credentials (10800 is seconds - 3 hours)
