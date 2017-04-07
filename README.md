@@ -149,19 +149,23 @@ docker tag bbdaf4361256 helloworld:latest
 docker run --name helloworldcontainer -d helloworld
 ```
 
--Stop all containers
+- Stop all containers
 ```
 docker stop $(docker ps -a -q)
 ```
 
--Delete all containers
+- Delete all containers
 ```
 docker rm $(docker ps -a -q)
 ```
 
--Delete all local docker images
+- Delete all local docker images
 ```
 docker rmi $(docker images -q)
+```
+- Delete dangling images
+```
+docker rmi $(docker images -f "dangling=true" -q)
 ```
 
 - Tail Docker logs
