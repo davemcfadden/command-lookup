@@ -181,6 +181,7 @@ docker exec -it <container id> bash
 
 - Mount local directory (Example for MySQL)
 ```
+ "-v //c/data/mysql:/var/lib/mysql"
 docker run -p 3306:3306 --name <container name> -v //c/data/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=<root password> -e MYSQL_DATABASE=<database name> -e MYSQL_USER=<mysql username> -e MYSQL_PASSWORD=<mysql password> -d mysql
 
 ```
