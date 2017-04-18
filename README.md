@@ -178,9 +178,14 @@ docker logs <container id>
 docker pull davemcfadden/springboot-docker
 ```
 
-- Run BASH inside helloworldcontainer
+- Run BASH inside container
 ```
 docker exec -it <container id> bash
+```
+
+- Run BASH command inside container
+```
+docker exec -it <container id> bash -c "echo hello"
 ```
 
 - Mount local directory (Example for MySQL)
