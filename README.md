@@ -194,8 +194,6 @@ docker run -p 3306:3306 --name <container name> -v //c/data/mysql:/var/lib/mysql
 
 ```
 
-#NPM Commands
-
 
 #Unix
 - EC2 File transfer
@@ -311,7 +309,23 @@ as: "Age_Description"
 ]
 )
 ```
+# Cassandra (CQL)
 
+- Create Keyspace
+```
+CREATE KEYSPACE DAVE_SPACE WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
+USE DAVE_SPACE;
+```
+
+- Show Existing Keyspaces
+```
+describe keyspaces;
+```
+
+- Show Existing Tables
+```
+describe tables;
+```
 
 
 
