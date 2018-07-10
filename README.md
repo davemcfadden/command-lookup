@@ -159,10 +159,16 @@ docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```
 
+- Stop and Delete image
+```
+docker rm -f CONTAINER_ID
+```
+
 - Delete all local docker images
 ```
 docker rmi $(docker images -q)
 ```
+
 - Delete dangling images
 ```
 docker rmi $(docker images -f "dangling=true" -q)
