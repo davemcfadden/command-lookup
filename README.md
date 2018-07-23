@@ -118,6 +118,11 @@ echo "eureka-examples/" >> .git/info/sparse-checkout
 git pull origin master
 ```
 
+- Show local commits
+```
+git diff origin/master
+```
+
 #Docker Commands
 - Build Image from DockerFile
 ```
