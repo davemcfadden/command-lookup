@@ -51,7 +51,7 @@ cf push
 	
 	
 	
-#Git
+# Git
 - Git stage modified or delete files
 ```
 git add -u
@@ -123,7 +123,7 @@ git pull origin master
 git diff origin/master
 ```
 
-#Docker Commands
+# Docker Commands
 - Build Image from DockerFile
 ```
 docker build -f /path/Dockerfile .
@@ -206,17 +206,25 @@ docker run -p 3306:3306 --name <container name> -v //c/data/mysql:/var/lib/mysql
 ```
 
 
-#Unix
+# Unix
 - EC2 File transfer
 ```
 scp -i C:/Users/Dave/Downloads/ec2.pem spring-boot-hello-world-0.0.1-SNAPSHOT.jar  ec2-user@ec2-11-111-111-111.compute-1.amazonaws.com:/home/ec2-user/
 ```
 
-#AWS
+# AWS
 - Associate Instance with ECS Cluster (Add to User Data)
 ```
 #!/bin/bash
 echo ECS_CLUSTER=your_cluster_name >> /etc/ecs/ecs.config
+```
+
+- Get Size of s3 Folder
+```
+aws s3api list-object-versions --bucket s3://bucket --output json --query "[sum(Versions[].Size)]"
+or
+aws s3 ls --summarize --human-readable --recursive s3://bucket
+
 ```
 
 # Mongo
